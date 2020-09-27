@@ -1,7 +1,10 @@
+import 'package:ange/ui/registration/model/registerModel.dart';
+import 'package:ange/ui/registration/model/validationItems.dart';
 import 'package:ange/ui/registration/signIn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/flutter_signin_button.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 class SignUp extends StatefulWidget {
   SignUp({Key key}) : super(key: key);
@@ -13,6 +16,9 @@ class SignUp extends StatefulWidget {
 class _SignUpState extends State<SignUp> {
   @override
   Widget build(BuildContext context) {
+    // Provider to recieve data
+    final user = Provider.of<RegisterModel>(context);
+
     return Scaffold(
       backgroundColor: Colors.teal.withOpacity(1),
       body: Container(
@@ -66,7 +72,12 @@ class _SignUpState extends State<SignUp> {
                 color: Colors.grey.withOpacity(0.1),
               ),
               child: TextFormField(
+                onChanged: (value) {
+                  user.changeName(value);
+                },
                 decoration: InputDecoration(
+                  errorStyle: TextStyle(color: Colors.red),
+                  errorText: user.username.error,
                   hintText: "Username",
                   hintStyle: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w300, fontSize: 14),
@@ -96,8 +107,13 @@ class _SignUpState extends State<SignUp> {
                 color: Colors.grey.withOpacity(0.1),
               ),
               child: TextFormField(
+                onChanged: (value) {
+                  user.changeEmail(value);
+                },
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
+                  errorText: user.email.error,
+                  errorStyle: TextStyle(color: Colors.red),
                   hintText: "Email",
                   hintStyle: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w300, fontSize: 14),
@@ -127,9 +143,14 @@ class _SignUpState extends State<SignUp> {
                 color: Colors.grey.withOpacity(0.1),
               ),
               child: TextFormField(
-                keyboardType: TextInputType.visiblePassword,
+                onChanged: (value) {
+                  user.changePassword(value);
+                },
+                //keyboardType: TextInputType.visiblePassword,
                 obscureText: true,
                 decoration: InputDecoration(
+                  errorText: user.password.error,
+                  errorStyle: TextStyle(color: Colors.red),
                   hintText: "Password",
                   hintStyle: GoogleFonts.notoSans(
                       fontWeight: FontWeight.w300, fontSize: 14),
@@ -147,8 +168,10 @@ class _SignUpState extends State<SignUp> {
             child: Container(
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(),
-              child: RaisedButton(
+              child: !user.isValid ? null : RaisedButton(
                 onPressed: () {
+                  
+                  user.saveInfo();
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => SignIn()));
                 },
@@ -159,30 +182,34 @@ class _SignUpState extends State<SignUp> {
             ),
           ),
 
-          
-            Divider(height: 10, thickness: 1, indent: 30, endIndent: 30,),
+          Divider(
+            height: 10,
+            thickness: 1,
+            indent: 30,
+            endIndent: 30,
+          ),
 
-           Padding(
+          Padding(
             padding: EdgeInsets.only(left: 110.0, right: 110.0, top: 0.0),
-            child:  SignInButton(
+            child: SignInButton(
               Buttons.Google,
               text: "Sign up with Google",
               onPressed: () {},
             ),
           ),
-          
-           Padding(
+
+          Padding(
             padding: EdgeInsets.only(left: 110.0, right: 110.0, top: 0.0),
-            child:  SignInButton(
+            child: SignInButton(
               Buttons.Facebook,
               text: "Sign up with Facebook",
               onPressed: () {},
             ),
           ),
-            // with custom text
-        
+          // with custom text
+
           Padding(
-            padding: const EdgeInsets.only(left:340.0, top:30),
+            padding: const EdgeInsets.only(left: 340.0, top: 30),
             child: Text(
               "Designed by Trinity",
               style: GoogleFonts.notoSans(

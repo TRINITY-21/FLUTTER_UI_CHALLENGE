@@ -31,6 +31,7 @@ dependencies:
   google_fonts:
   smooth_star_rating:
   flutter_signin_button: ^1.1.0
+  provider:
 
 
 dev_dependencies:
