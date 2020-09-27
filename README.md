@@ -3,7 +3,7 @@
 A new Flutter project.
 [img]https://i.postimg.cc/LhjLbSbG/Screenshot-20200925-085948.jpg[/img]
 
-[url=https://postimg.cc/QHb5jbsb][img]https://i.postimg.cc/QHb5jbsb/Screenshot-20200925-085958.jpg[/img][/url]
+[img]https://i.postimg.cc/QHb5jbsb/Screenshot-20200925-085958.jpg[/img][/url]
 
 [url=https://postimg.cc/k2gSGbgd][img]https://i.postimg.cc/k2gSGbgd/Screenshot-20200925-090009.jpg[/img][/url]
 
