@@ -1,7 +1,7 @@
 # FLUTTER UI CHALLENGE
 
 A new Flutter project.
-[img]https://i.postimg.cc/LhjLbSbG/Screenshot-20200925-085948.jpg[/img]
+https://i.postimg.cc/LhjLbSbG/Screenshot-20200925-085948.jpg
 
 [img]https://i.postimg.cc/QHb5jbsb/Screenshot-20200925-085958.jpg[/img][/url]
 
