@@ -1,13 +1,14 @@
 # FLUTTER UI CHALLENGE
 
 A new Flutter project.
+![test image size](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085948.jpg){:height="700px" width="400px"
+
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085948.jpg | width=10)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085958.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-090009.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-090027.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-090303.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-091059.jpg)
-
 
 ## Getting Started
 
