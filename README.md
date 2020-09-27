@@ -1,7 +1,7 @@
 # FLUTTER UI CHALLENGE
 
 A new Flutter project.
-![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085948.jpg  = 250x)
+![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085948.jpg | width=10)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-085958.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-090009.jpg)
 ![alt text](https://github.com/TRINITY-21/FLUTTER_UI_CHALLENGE/blob/master/Screenshot_20200925-090027.jpg)
